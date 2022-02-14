@@ -33,7 +33,7 @@ resource "aws_instance" "bad_ubuntu" {
 
 module "tfc-demo-two-tier" {
   source  = "app.terraform.io/richard-russell-org/tfc-demo-two-tier/aws"
-  version = "1.0.5"
+  version = "1.0.7"
   aws_region = "eu-west-2"
   aws_ami    = "ami-0ac10f53765369588"
   service_name = "${terraform.workspace}"
